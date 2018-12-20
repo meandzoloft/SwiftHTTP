@@ -340,7 +340,7 @@ extension URLRequest {
     Check if the request requires the parameters to be appended to the URL
     */
     public func isURIParam() -> Bool {
-        if verb == .GET || verb == .HEAD || verb == .DELETE {
+        if verb == .GET || verb == .HEAD {
             return true
         }
         return false
